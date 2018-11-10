@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-cljs",
+  "version": "1.0.0",
+  "description": "this is a portfolio site made with cljs and reagent",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack -d --watch",
+    "build": "webpack -p"
+  },
+  "dependencies": {
+    "progressive-image": "^1.2.0",
+    "react": "15.5.4",
+    "react-dom": "15.5.4",
+    "react-player": "0.18.0",
+    "webpack": "1.13.1"
+  },
+  "author": "Andrew Cotter",
+  "license": "MIT"
+}
