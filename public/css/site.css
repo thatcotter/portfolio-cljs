@@ -27,3 +27,12 @@
   font-family: 'Circular';
   /* font-family: 'Sans Forgetica'; */
 }
+
+.fa,
+.fas,
+.far,
+.fal,
+.fab {
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+}
