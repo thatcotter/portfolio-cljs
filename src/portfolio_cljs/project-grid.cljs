@@ -5,24 +5,26 @@
 (defn placeholder-link [size]
     (str "https://picsum.photos/" size "/?random"))
 
-(def image-links
-    ["./assets/images/phillytron.jpg"
-     "./assets/images/magic-mecha2.jpg"
-     "https://redpaperheart.com/media/work/talktolight/google_talktolight_sxsw_hero-1920.jpg"
-     "./assets/images/buttons-small.png"
-     "./assets/images/voyage_1.gif"
-     "./assets/images/tide.gif"
-     "./assets/images/HA_7288(edit).jpg"])
+(def project-links
+    {:phillytron "./assets/images/phillytron.jpg"
+     :mgm "./assets/images/magic-mecha2.jpg"
+     :talktolight"https://redpaperheart.com/media/work/talktolight/google_talktolight_sxsw_hero-1920.jpg"
+     :buttons "./assets/images/buttons-small.png"
+     :voyage "./assets/images/voyage_1.gif"
+     :tide "./assets/images/tide.gif"
+     :ha "./assets/images/HA_7288(edit).jpg"})
 
-(defn cell [image state & [link]]
+
+(defn cell [project state & [link]]
     [:div.column.is-one-third.progressive 
         {:style { :justify-content "center"
                     :overflow "hidden"
                     :align-items "center"}
          :on-click #(do (swap! state assoc :page "Projects")
+                        (swap! state assoc :project project)
                         (print state))}
         [:img.preview.lazy 
-            {:src image
+            {:src (project project-links)
                 :style {:flex 0
                         :height "100%"
                         :width "100%"
@@ -33,8 +35,8 @@
 (defn cell-grid [state]
     [:section.section
         [:div.columns.is-multiline
-            (for [image (shuffle image-links)]
-                (cell image state))]])
+            (for [project (-> (shuffle project-links) (keys))]
+                (cell project state))]])
 
 (defn cell-grid-placeholder [num-cells state]
     [:section.section

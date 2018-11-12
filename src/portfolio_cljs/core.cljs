@@ -10,10 +10,10 @@
 ;; -------------------------
 ;; Model
 
-(def model (r/atom {:page "Resume/CV"
-                    :next-page nil
-                    :last-page nil
-                    :project-title nil}))
+(def model (r/atom {:page "Home"
+                    :next-page "nil"
+                    :last-page "nil"
+                    :project "nil"}))
 
 ;; -------------------------
 ;; Views
@@ -21,7 +21,6 @@
 (def pages
   ["Home"
    "About"
-  ;  "Contact"
    "Resume/CV"])
 
 (defn page-link [page-name]
@@ -33,7 +32,7 @@
   [:div
     [:section.section
       [:h1.title.name "andrew cotter"]
-      [:h2.subtitle.name "computational art & design"]
+      [:h2.subtitle.name "computational art + design"]
       [:div.tabs.is-small
         [:ul
           (for [page pages]
@@ -59,7 +58,7 @@
           "About" [about/body]
           "Contact" [contact/body]
           "Resume/CV" [resume/body]
-          "Projects" [projects/body]
+          "Projects" [projects/body @model]
           [:div]))]])
 
 ;; -------------------------

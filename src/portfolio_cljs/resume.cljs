@@ -129,8 +129,8 @@
                     [:div.tile.is-vertical.box
                         [:p.title.is-5 "Familiar"]
                         [:dl.is-6
-                            [:li "Python"]
                             [:li "Rust"]
+                            [:li "Python"]
                             [:li "Vert Shaders"]
                             [:li "Jupyter Notebooks"]]]
                     [:div.tile.is-vertical.box
