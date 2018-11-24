@@ -58,7 +58,7 @@
           "About" [about/body]
           "Contact" [contact/body]
           "Resume/CV" [resume/body]
-          "Projects" [projects/body @model]
+          "Projects" [:div [projects/body @model] [grid/cell-grid model]]
           [:div]))]])
 
 ;; -------------------------

@@ -14,6 +14,9 @@
      :tide "./assets/images/tide.gif"
      :ha "./assets/images/HA_7288(edit).jpg"})
 
+(defn scroll-to-top []
+    (js/window.scrollTo 0 0 "smooth"))
+
 
 (defn cell [project state & [link]]
     [:div.column.is-one-third.progressive 
@@ -22,6 +25,7 @@
                     :align-items "center"}
          :on-click #(do (swap! state assoc :page "Projects")
                         (swap! state assoc :project project)
+                        (scroll-to-top)
                         (print state))}
         [:img.preview.lazy 
             {:src (project project-links)
