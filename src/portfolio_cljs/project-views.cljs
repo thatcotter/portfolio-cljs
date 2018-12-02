@@ -20,49 +20,58 @@
             (- (* 0.66 (.-width js/screen))))
         "/?random"))
 
+(defn other-media [path-list]
+    ; TODO
+    ; takes a list of paths and returns an arrangement of images 
+    ([:div ""]))
+
 (def projects 
     {:phillytron
         {:title "Phillytron"
          :subtitle "Showcasing Indie Game Development in Philadelphia"
-         :description ipsum}
+         :description ipsum
+         :supplement-media ["path1" "path2"]}
      :mgm 
         {:title "Magical Girl Mecha"
          :subtitle "A cooperative, anime-inspired space adventure"
-         :description ipsum}
+         :description ipsum
+         :supplement-media ["path1" "path2"]}
         
      :talktolight
         {:title "Talk to Light"
          :subtitle "    "
-         :description ipsum}
+         :description ipsum
+         :supplement-media ["path1" "path2"]}
         
      :buttons
         {:title "Push My Buttons"
          :subtitle "A competitive take on whack-a-mole"
-         :description ipsum}
+         :description ipsum
+         :supplement-media ["path1" "path2"]}
         
      :voyage
         {:title "Voyage"
          :subtitle "A Newtonian Physics-based Puzzle Game"
-         :description ipsum}
+         :description ipsum
+         :supplement-media ["path1" "path2"]}
         
      :tide
         {:title "Tide"
          :subtitle "A Sybiotic Adventure"
-         :description ipsum}
+         :description ipsum
+         :supplement-media ["path1" "path2"]}
         
      :ha
         {:title "Hertzian Aegis"
          :subtitle "A love letter to Design Noir"
-         :description ipsum}})
+         :description ipsum
+         :supplement-media ["path1" "path2"]}})
         
-; (defn back-button []
-;     [:div
-;         [:a "Back"]])
+
 
 (defn body [state]
     (let [project ((state :project) projects)]
         [:div
-            ; (back-button)
             [:section.section
                 [:h1.title (project :title)]
                 [:h2.subtitle (project :subtitle)]]
@@ -70,4 +79,6 @@
                 [:div.hero-body
                     [:img {:src (rand-hero-src)}]]]
             [:section.section
-                [:p ipsum]]]))
+                [:p ipsum]]
+            [:section.section
+                (other-media (project :supplement-media))]]))

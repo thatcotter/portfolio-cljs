@@ -51,7 +51,7 @@
             [:a {:on-click #(print "test")
                  :href "https://www.instagram.com/thatcotter/"
                  :target "blank"}
-              [:i.fab.fa-instagram] " "]]]]       
+              [:i.fab.fa-instagram] " "]]]]
       (let [state (@model :page)]
         (case state
           "Home" [grid/cell-grid model]
