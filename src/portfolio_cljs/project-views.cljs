@@ -79,6 +79,6 @@
                 [:div.hero-body
                     [:img {:src (rand-hero-src)}]]]
             [:section.section
-                [:p ipsum]]
-            [:section.section
-                (other-media (project :supplement-media))]]))
+                [:p ipsum]]]))
+            ; [:section.section
+            ;     (other-media (project :supplement-media))]]))
