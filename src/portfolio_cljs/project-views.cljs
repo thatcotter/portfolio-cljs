@@ -20,8 +20,8 @@
         "/?random"))
 
 (defn video-hero [url]
-    [:div {:style { :padding "50% 0 0 0"
-                    :position "relative"}}
+    [:div {:style {:padding "50% 0 0 0"
+                   :position "relative"}}
         [:iframe {:src url
                   :style {:width "100%"
                           :height "100%"
@@ -35,7 +35,8 @@
 (defn other-media [path-list]
     ; TODO
     ; takes a list of paths and returns an arrangement of images 
-    ([:div ""]))
+    (for [path path-list]
+        [:img {:src path}]))
 
 (defn other-media-placeholder [path-range]
     (for [path path-range]
@@ -45,14 +46,15 @@
     {:phillytron
         {:title "Phillytron"
          :subtitle "Showcasing Indie Game Development in Philadelphia"
-         :hero [:img {:src "../assets/images/LowPoly1.gif"}]
+         :hero [:video {:padding "50% 0 0 0":width "50%" :controls "true"}
+                    [:source {:src "../assets/images/phillytron.mp4" :type "video/mp4"}]]
          :description 
             [:div
                 [:p "This project was done in collaboration with Philly Game Mechanics, a non-profit organization in Philadelphia that leads and organizes indie game development events like game jams, talks, and workshops. The Phillytron is an arcade cabinet that showcases published games from local studios in Philly as well as past game jam winners."]
-                [:p "The Phillytron has been featured at MAGFest and is scheduled to show at other various gaming festivals, conventions, and expos in the Northeast US."]
+                [:p "The Phillytron has been featured at The Franklin Institute, MAGFest, PAX East, and is scheduled to show at other various gaming festivals, conventions, and expos in the Northeast US."]
                 [:p "Role: HLSL Shader programming for intro animation and menu background"]
                 [:p "In collaboration with: Steve Petit (Technical Lead), Marina Romero (Cabinet Art), Jake O'Bien (Producer)"]]
-         :supplement-media ["path1" "path2"]}
+         :supplement-media ["../assets/images/phillytron1.png" "../assets/images/phillytron2.jpg" "../assets/images/phillytron3.png"]}
      :mgm 
         {:title "Magical Girl Mecha"
          :subtitle "A cooperative, anime-inspired space adventure"
@@ -74,7 +76,7 @@
                 [:p "This project was done while I was interning at " [:a {:href "https://redpaperheart.com/work/talktolight" :target "_blank"} "Red Paper Heart"] ". We teamed up with some friends at Google to design an open source art installation that would showcase the potential of the technology from Red Paper Heart’s unique point of view and inspire developers and makers everywhere to build things using Custom Device Actions."]
                 [:p "Role: Code Intern"]
                 [:p "In collaboration with: Zander Brimijoin (Creative Director), Daniel Scheibel (Technology Director), Lisa Walters (Senior Producer), Pedro Piccinini (Art Director), Greg Schomburg (Creative Coder), Shuvashis Das (Creative Coder), Adrià Navarro López (Creative Coder), Ji Young Chun (Code Intern)"]]
-         :supplement-media ["path1" "path2"]}
+         :supplement-media []}
         
      :buttons
         {:title "Push My Buttons"
@@ -85,7 +87,7 @@
                 [:p "This project was an assignment for New Arcade, a class focused on making unconventional controllers for video games. For this project, our primary constraint was to not use a screen."]
                 [:p "Role: Arduino Programming and Game Design"]
                 [:p "In collaboration with: Kabeer (Soldering and Game Design) and Tushal (Fabrication and Game Design)"]]
-         :supplement-media ["path1" "path2"]}
+         :supplement-media []}
         
      :voyage
         {:title "Voyage"
@@ -107,7 +109,7 @@
                 [:p "For my senior capstone, I focused on on the qualia concerning electro-magnetic fields. Although we come in contact with EMFs several times a day, we don't give them much thought because we cannot perceive them."]
                 [:p "Player 1: W,A,S,D"]
                 [:p "Player 2: UP, DOWN, LEFT, RIGHT"]]
-         :supplement-media ["path1" "path2"]}
+         :supplement-media []}
         
      :ha
         {:title "Hertzian Aegis"
@@ -118,7 +120,7 @@
                 [:p "For my senior capstone, I focused on on the qualia concerning electro-magnetic fields. Although we come in contact with EMFs several times a day, we don't give them much thought because we cannot perceive them."]
                 [:p "In my senior fall semester, I made a prototype wearable that used a jumper wire as a sensor. The prototype itself only proved to be a capacitive sensor, but it helped me get used to using the Lilypad microcontroller as the conduit of my design. In the spring, I reverse-engineered an existing EMF sensor to have a qualitative output and mapped that output onto a coat."]
                 [:p "By letting the user visualize electro-magnetic radiation, this wearable technology helps to better understand the hidden nature of electronic objects."]]
-         :supplement-media ["path1" "path2"]}})
+         :supplement-media []}})
         
 
 
@@ -131,4 +133,4 @@
             [:section.hero
                 [:div.hero-body (project :hero)]]
             [:section.section (project :description)]
-            [:section.section (other-media-placeholder (project :supplement-media))]]))
+            [:section.section (other-media (project :supplement-media))]]))
