@@ -8,7 +8,7 @@
 (def project-links
     {:phillytron "./assets/images/phillytron.jpg"
      :mgm "./assets/images/magic-mecha2.jpg"
-     :talktolight"https://redpaperheart.com/media/work/talktolight/google_talktolight_sxsw_hero-1920.jpg"
+     :talktolight "https://redpaperheart.com/media/work/talktolight/google_talktolight_sxsw_hero-1920.jpg"
      :buttons "./assets/images/buttons-small.png"
      :voyage "./assets/images/voyage_1.gif"
      :tide "./assets/images/tide.gif"
