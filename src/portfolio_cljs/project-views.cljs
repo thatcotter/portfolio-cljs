@@ -104,14 +104,14 @@
          :hero (video-hero "https://player.vimeo.com/video/245480772")
          :description 
             [:div
-                [:p "This project was an assignment for New Arcade, a class focused on making unconventional controllers for video games. For this project, we tried to make a game centered around flying a magical robot with a friend through custom motion controls."]
+                [:p "This project was an assignment for "[:a {:href "https://new-arcade.tumblr.com/" :target "_blank"}"New Arcade"]", a class focused on making unconventional controllers for video games. For this project, we tried to make a game centered around flying a magical robot with a friend through custom motion controls."]
                 [:p "Role: OpenCV programming and OSC protocol"]
                 [:p "In collaboration with: "[:a {:href "https://sydneyadamsdesigns.com/" :target "_blank"}"Sydney Adams"]" (Design Lead), "[:a {:href "https://sites.google.com/site/taeyonii/" :target "_blank"}"Taeyeon Kim"]" (Art Assets), and "[:a {:href "https://www.jung3.com/" :target "_blank"}"Seungho Jung"]" (Unity Programming)"]]
          :supplement-media []}
         
      :talktolight
         {:title "Talk to Light"
-         :subtitle "A light bean you can talk to"
+         :subtitle "A light beam you can talk to"
          :hero [:a {:href "https://redpaperheart.com/work/talktolight" :target "_blank"}[:img {:src "https://redpaperheart.com/media/work/talktolight/google_talktolight_sxsw_hero-1920.jpg"}]]
          :description
             [:div
@@ -126,7 +126,7 @@
          :hero (video-hero "https://www.youtube.com/embed/lwRe1kuQjys")
          :description 
             [:div
-                [:p "This project was an assignment for New Arcade, a class focused on making unconventional controllers for video games. For this project, our primary constraint was to not use a screen."]
+                [:p "This project was an assignment for "[:a {:href "https://new-arcade.tumblr.com/" :target "_blank"}"New Arcade"]", a class focused on making unconventional controllers for video games. For this project, our primary constraint was to not use a screen."]
                 [:p "Role: Arduino Programming and Game Design"]
                 [:p "In collaboration with: Kabeer (Soldering and Game Design) and Tushal (Fabrication and Game Design)"]]
          :supplement-media []}
@@ -138,17 +138,18 @@
          :description 
             [:div
                 [:p "This game uses the Newtownian model of gravitation and physics as a puzzle mechanic. The objective is to steer your ship over to the red square while being pulled around by the gravitational forces of nearby planetoids."]
-                [:p "Final Project for Algorithmic Simulations"]
-                [:p "Made with openFrameworks"]]
+                [:p "Final Project for "[:a {:href "https://github.com/reginaflores/AlgoSims2016" :target "_blank"} "Algorithmic Simulations"]]
+                [:p "Made with "[:a {:href "https://openframeworks.cc/" :target "_blank"} "openFrameworks"]]]
          :supplement-media ["../assets/images/voyage_2.png" "../assets/images/voyage_3.png"]}
         
      :tide
         {:title "Tide"
          :subtitle "A Sybiotic Adventure"
-         :hero [:img {:src "../assets/images/tide.gif"}]
+         :hero [:iframe {:width "80%" :height "500px" :scrolling "no" :frameborder "no" :src "./tide/tide.html"}]
          :description 
             [:div
                 ; [:p "For my senior capstone, I focused on on the qualia concerning electro-magnetic fields. Although we come in contact with EMFs several times a day, we don't give them much thought because we cannot perceive them."]
+                [:p "This was made as an entry in a game jam focused on 'asymmetrical co-op mechanics'. Each players controll a different fish. The larger orange fish can eat the small red fish, and the smaller blue fish needs to avoid the red fish while so it may eat all of the moss."]
                 [:p "Player 1: W,A,S,D"]
                 [:p "Player 2: UP, DOWN, LEFT, RIGHT"]]
          :supplement-media []}

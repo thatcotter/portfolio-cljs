@@ -136,7 +136,7 @@
                                 [:li "Python / Scikit"]
                                 [:li "Jupyter Notebooks"]
                                 [:li "Cinder (C++)"]
-                                [:li "Vert Shaders"]]]
+                                [:li "Vertex Shaders"]]]
                         [:div.tile.is-vertical.box
                             [:p.title.is-5 "Learning"]
                             [:dl.is-6
