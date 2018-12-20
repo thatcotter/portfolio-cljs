@@ -41,7 +41,7 @@
 (defn body []
     [:div
         [:section.section
-            [:a.subtitle.has-text-link {:href "../assets/images/acotter_resume.pdf"} "Print/PDF"]]
+            [:a.subtitle.has-text-link {:href "./assets/images/acotter_resume.pdf"} "Print/PDF"]]
         [:section.section
             [:div.tile.is-ancestor
                 [:div.tile.is-vertical.is-7

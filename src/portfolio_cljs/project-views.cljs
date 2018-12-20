@@ -90,14 +90,14 @@
         {:title "Phillytron"
          :subtitle "Showcasing Indie Game Development in Philadelphia"
          :hero [:video {:padding "50% 0 0 0":width "50%" :controls "true"}
-                    [:source {:src "../assets/images/phillytron.mp4" :type "video/mp4"}]]
+                    [:source {:src "./assets/images/phillytron.mp4" :type "video/mp4"}]]
          :description 
             [:div
                 [:p "This project was done in collaboration with " [:a {:href "http://www.phillygamemechanics.com/" :target "_blank"} "Philly Game Mechanics"]", a non-profit organization in Philadelphia that leads and organizes indie game development events like game jams, talks, and workshops. The Phillytron is an arcade cabinet that showcases published games from local studios in Philly as well as past game jam winners."]
                 [:p "The Phillytron has been featured at The Franklin Institute, MAGFest, PAX East, and is scheduled to show at other various gaming festivals, conventions, and expos in the Northeast US."]
                 [:p "Role: HLSL Shader programming for intro animation and menu background"]
                 [:p "In collaboration with: Steve Petit (Technical Lead), Marina Romero (Cabinet Art), Jake O'Bien (Producer)"]]
-         :supplement-media ["../assets/images/phillytron1.png" "../assets/images/phillytron2.jpg" "../assets/images/phillytron3.png"]}
+         :supplement-media ["./assets/images/phillytron1.png" "./assets/images/phillytron2.jpg" "./assets/images/phillytron3.png"]}
      :mgm 
         {:title "Magical Girl Mecha"
          :subtitle "A cooperative, anime-inspired space adventure"
@@ -140,7 +140,7 @@
                 [:p "This game uses the Newtownian model of gravitation and physics as a puzzle mechanic. The objective is to steer your ship over to the red square while being pulled around by the gravitational forces of nearby planetoids."]
                 [:p "Final Project for "[:a {:href "https://github.com/reginaflores/AlgoSims2016" :target "_blank"} "Algorithmic Simulations"]]
                 [:p "Made with "[:a {:href "https://openframeworks.cc/" :target "_blank"} "openFrameworks"]]]
-         :supplement-media ["../assets/images/voyage_2.png" "../assets/images/voyage_3.png"]}
+         :supplement-media ["./assets/images/voyage_2.png" "./assets/images/voyage_3.png"]}
         
      :tide
         {:title "Tide"
@@ -157,13 +157,13 @@
      :ha
         {:title "Hertzian Aegis"
          :subtitle "A love letter to Design Noir"
-         :hero [:img {:src "../assets/images/HA_7288(edit).jpg"}]
+         :hero [:img {:src "./assets/images/HA_7288(edit).jpg"}]
          :description 
             [:div
                 [:p "For my senior capstone, I focused on on the qualia concerning electro-magnetic fields. Although we come in contact with EMFs several times a day, we don't give them much thought because we cannot perceive them."]
                 [:p "In my senior fall semester, I made a prototype wearable that used a jumper wire as a sensor. The prototype itself only proved to be a capacitive sensor, but it helped me get used to using the Lilypad microcontroller as the conduit of my design. In the spring, I reverse-engineered an existing EMF sensor to have a qualitative output and mapped that output onto a coat."]
                 [:p "By letting the user visualize electro-magnetic radiation, this wearable technology helps to better understand the hidden nature of electronic objects."]]
-         :supplement-media ["../assets/images/HA_7269.jpg" "../assets/images/HA_7270.jpg"]}})
+         :supplement-media ["./assets/images/HA_7269.jpg" "./assets/images/HA_7270.jpg"]}})
         
 
 
