@@ -48,26 +48,26 @@
                     [:article.tile.is-parent.is-vertical
                         [:h1.title.is-child "Professional Experience"]
                         [:article.tile.is-child.box
-                            [:p.title.is-4 "Local Projects, Creative Technologist"]
+                            [:p.title.is-5 "Local Projects, Creative Technologist"]
                             [:p.subtitle "Spring 2018 - Present"]
                             [:p.is-size-6.has-text-weight-light "Worked on various interactive installations in a
                             developer role, using platforms such as Electron with
                             WebGL, Arduino, and Swift/iOS."]]
                         [:div.tile.is-child.box
-                            [:p.title.is-4 "Red Paper Heart, Code Intern"]
+                            [:p.title.is-5 "Red Paper Heart, Code Intern"]
                             [:p.subtitle "Summer 2017"]
                             [:p.is-size-6.has-text-weight-light.is-7 "Worked in tangent with the design team to
                             program/build interactive installations and
                             experiences for commercial clients using
                             openFrameworks, Cinder, and Arduino."]]
                         [:div.tile.is-child.box
-                            [:p.title.is-4 "Cipher Prime, Intern"]
+                            [:p.title.is-5 "Cipher Prime, Intern"]
                             [:p.subtitle "Fall 2015 - Summer 2016"]
                             [:p.is-size-6.has-text-weight-light.is-7 "Assisting with design/development of video
                             games and interactive media in various
                             frameworks such as Unity, Cinder, and P5.js."]]
                         [:div.tile.is-child.box
-                            [:p.title.is-4 "Night Kitchen, Interaction Developer"]
+                            [:p.title.is-5 "Night Kitchen, Interaction Developer"]
                             [:p.subtitle "Fall 2014 - Summer 2016"]
                             [:p.is-size-6.has-text-weight-light.is-7 "Lead design/development research by
                             exploring new tools for the web and
@@ -78,17 +78,17 @@
                         [:div.tile.is-child
                             [:p.title "Teaching Experience"]
                             [:div.content.box
-                                [:p.title.is-4 "Instructor, Creativity + Computation"]
-                                [:p.subtitle "Parsons, Fall 2018"]
-                                [:div.content.has-text-weight-light.is-7 short-ipsum]]
+                                [:p.title.is-5 "Instructor, Creativity + Computation"]
+                                [:p.subtitle "Parsons, Fall 2018"]]
+                                ; [:div.content.has-text-weight-light.is-7 short-ipsum]]
                             [:div.content.box
-                                [:p.title.is-4 "Teaching Assistant, Immersive Storytelling"]
-                                [:p.subtitle "Parsons, Fall 2017"]
-                                [:div.content.has-text-weight-light.is-7 short-ipsum]]
+                                [:p.title.is-5 "Teaching Assistant, Immersive Storytelling"]
+                                [:p.subtitle "Parsons, Fall 2017"]]
+                                ; [:div.content.has-text-weight-light.is-7 short-ipsum]]
                             [:div.content.box
-                                [:p.title.is-4 "Code Instructor, D+T  Bootcamp"]
-                                [:p.subtitle "Parsons, Summer 2017"]
-                                [:div.content.has-text-weight-light.is-7 short-ipsum]]]]] 
+                                [:p.title.is-5 "Code Instructor, D+T  Bootcamp"]
+                                [:p.subtitle "Parsons, Summer 2017"]]]]]
+                                ; [:div.content.has-text-weight-light.is-7 short-ipsum]]]]] 
                 [:div.tile.is-parent.is-vertical.is-5
                         [:p.title "Core Competencies"]
                         [:div.content.box

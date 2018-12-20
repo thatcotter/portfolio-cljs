@@ -33,7 +33,7 @@
                         :height "100%"
                         :width "100%"
                         :layout "fill"
-                        :opacity 0.75
+                        :opacity 0.66
                         :object-fit "cover"}}]])
 
 (defn cell-grid [state]
