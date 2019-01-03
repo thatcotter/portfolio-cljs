@@ -12,7 +12,8 @@
      :buttons "./assets/images/buttons-small.png"
      :voyage "./assets/images/voyage_1.gif"
      :tide "./assets/images/tide.gif"
-     :ha "./assets/images/HA_7288(edit).jpg"})
+     :ha "./assets/images/HA_7288(edit).jpg"
+     :thesis "./assets/images/thesis-screenshot.png"})
 
 (defn scroll-to-top []
     (js/window.scrollTo 0 0 "smooth"))

@@ -95,6 +95,7 @@
             [:div
                 [:p "This project was done in collaboration with " [:a {:href "http://www.phillygamemechanics.com/" :target "_blank"} "Philly Game Mechanics"]", a non-profit organization in Philadelphia that leads and organizes indie game development events like game jams, talks, and workshops. The Phillytron is an arcade cabinet that showcases published games from local studios in Philly as well as past game jam winners."]
                 [:p "The Phillytron has been featured at The Franklin Institute, MAGFest, PAX East, and is scheduled to show at other various gaming festivals, conventions, and expos in the Northeast US."]
+                [:br]
                 [:p "Role: HLSL Shader programming for intro animation and menu background"]
                 [:p "In collaboration with: Steve Petit (Technical Lead), Marina Romero (Cabinet Art), Jake O'Bien (Producer)"]]
          :supplement-media ["./assets/images/phillytron1.png" "./assets/images/phillytron2.jpg" "./assets/images/phillytron3.png"]}
@@ -105,6 +106,7 @@
          :description 
             [:div
                 [:p "This project was an assignment for "[:a {:href "https://new-arcade.tumblr.com/" :target "_blank"}"New Arcade"]", a class focused on making unconventional controllers for video games. For this project, we tried to make a game centered around flying a magical robot with a friend through custom motion controls."]
+                [:br]
                 [:p "Role: OpenCV programming and OSC protocol"]
                 [:p "In collaboration with: "[:a {:href "https://sydneyadamsdesigns.com/" :target "_blank"}"Sydney Adams"]" (Design Lead), "[:a {:href "https://sites.google.com/site/taeyonii/" :target "_blank"}"Taeyeon Kim"]" (Art Assets), and "[:a {:href "https://www.jung3.com/" :target "_blank"}"Seungho Jung"]" (Unity Programming)"]]
          :supplement-media []}
@@ -116,6 +118,7 @@
          :description
             [:div
                 [:p "This project was done while I was interning at " [:a {:href "https://redpaperheart.com/work/talktolight" :target "_blank"} "Red Paper Heart"] ". We teamed up with some friends at Google to design an open source art installation that would showcase the potential of the technology from Red Paper Heart’s unique point of view and inspire developers and makers everywhere to build things using Custom Device Actions."]
+                [:br]
                 [:p "Role: Code Intern"]
                 [:p "In collaboration with: Zander Brimijoin (Creative Director), Daniel Scheibel (Technology Director), Lisa Walters (Senior Producer), Pedro Piccinini (Art Director), Greg Schomburg (Creative Coder), Shuvashis Das (Creative Coder), Adrià Navarro López (Creative Coder), Ji Young Chun (Code Intern)"]]
          :supplement-media ["https://redpaperheart.com/media/work/talktolight/google_talktolight_sxsw_01-1440.jpg" "https://redpaperheart.com/media/work/talktolight/google_talktolight_02-1440.jpg" "https://redpaperheart.com/media/work/talktolight/google_talktolight_sxsw_05-1440.jpg"]}
@@ -127,6 +130,7 @@
          :description 
             [:div
                 [:p "This project was an assignment for "[:a {:href "https://new-arcade.tumblr.com/" :target "_blank"}"New Arcade"]", a class focused on making unconventional controllers for video games. For this project, our primary constraint was to not use a screen."]
+                [:br]
                 [:p "Role: Arduino Programming and Game Design"]
                 [:p "In collaboration with: Kabeer (Soldering and Game Design) and Tushal (Fabrication and Game Design)"]]
          :supplement-media []}
@@ -138,6 +142,7 @@
          :description 
             [:div
                 [:p "This game uses the Newtownian model of gravitation and physics as a puzzle mechanic. The objective is to steer your ship over to the red square while being pulled around by the gravitational forces of nearby planetoids."]
+                [:br]
                 [:p "Final Project for "[:a {:href "https://github.com/reginaflores/AlgoSims2016" :target "_blank"} "Algorithmic Simulations"]]
                 [:p "Made with "[:a {:href "https://openframeworks.cc/" :target "_blank"} "openFrameworks"]]]
          :supplement-media ["./assets/images/voyage_2.png" "./assets/images/voyage_3.png"]}
@@ -149,7 +154,8 @@
          :description 
             [:div
                 ; [:p "For my senior capstone, I focused on on the qualia concerning electro-magnetic fields. Although we come in contact with EMFs several times a day, we don't give them much thought because we cannot perceive them."]
-                [:p "This was made as an entry in a game jam focused on 'asymmetrical co-op mechanics'. Each players controll a different fish. The larger orange fish can eat the small red fish, and the smaller blue fish needs to avoid the red fish while so it may eat all of the moss."]
+                [:p "This was made as an entry in a game jam focused on 'asymmetrical co-op mechanics'. Each players controll a different fish. The larger orange fish can eat the small red fish, and the smaller blue fish needs to avoid the red fish while so it may eat all of the moss."]'
+                [:br]
                 [:p "Player 1: W,A,S,D"]
                 [:p "Player 2: UP, DOWN, LEFT, RIGHT"]]
          :supplement-media []}
@@ -161,9 +167,24 @@
          :description 
             [:div
                 [:p "For my senior capstone, I focused on on the qualia concerning electro-magnetic fields. Although we come in contact with EMFs several times a day, we don't give them much thought because we cannot perceive them."]
+                [:br]
                 [:p "In my senior fall semester, I made a prototype wearable that used a jumper wire as a sensor. The prototype itself only proved to be a capacitive sensor, but it helped me get used to using the Lilypad microcontroller as the conduit of my design. In the spring, I reverse-engineered an existing EMF sensor to have a qualitative output and mapped that output onto a coat."]
+                [:br]
                 [:p "By letting the user visualize electro-magnetic radiation, this wearable technology helps to better understand the hidden nature of electronic objects."]]
-         :supplement-media ["./assets/images/HA_7269.jpg" "./assets/images/HA_7270.jpg"]}})
+         :supplement-media ["./assets/images/HA_7269.jpg" "./assets/images/HA_7270.jpg"]}
+     :thesis
+        {:title "MFA Thesis: Grokking Creative Code"
+         :subtitle "A Field Guide to Programming as Expression"
+         :hero [:a {:href "http://thatcotter.github.io/thesis/"} [:img {:src "./assets/images/thesis-screenshot-big.png"}]]
+         :description 
+            [:div
+                [:p "For my MFA thesis at Parsons, I focused of methods of teaching programming outside of the context of engineering. I specifically focused on a pedagogical practice call the Model-First Approach. The model first approach is focused on showing a student how a system works wholistically before focusing in on the particular aspects of that system. My research manifested as a short series of tutorials focused on serving people who have started to understand the basics of programming, but aren't yet confident enough to dive into more advanced concepts."]
+                [:br]
+                ; [:p "In my senior fall semester, I made a prototype wearable that used a jumper wire as a sensor. The prototype itself only proved to be a capacitive sensor, but it helped me get used to using the Lilypad microcontroller as the conduit of my design. In the spring, I reverse-engineered an existing EMF sensor to have a qualitative output and mapped that output onto a coat."]
+                ; [:p "By letting the user visualize electro-magnetic radiation, this wearable technology helps to better understand the hidden nature of electronic objects."]]
+                [:p [:a {:href "http://thatcotter.github.io/thesis/"} "Link"]]]}}) 
+                
+        ;  :supplement-media ["./assets/images/HA_7269.jpg" "./assets/images/HA_7270.jpg"]}})
         
 
 
