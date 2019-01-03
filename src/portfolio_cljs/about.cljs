@@ -10,8 +10,12 @@
             [:section.hero.is-medium.is-bold
                 [:div.hero-body
                     [:h1.title "Hey, bud! I'm Andrew, a designer from Philly working in NYC. I design and develop interactive experiences that are surprising, fun, and honest."]
-                    [:p "I like to make things that have both physical and digital dimensions to them. I have a BS in Industrial Design from The University of the Arts and am currently finishing up an MFA in Design and Technology at Parsons. I like to converge these two feilds in the form of interactive installations and games. I'm always looking at our relationships to technology and the ways we wield it: how it does things for us, and to us. When I'm not busy making things, I enjoy exploring the city, sharing cheesy puns with friends, or trying to develop a new skill like knitting or meditation."]
-                    [:p "For my day job, I'm currently a creative technologist at Local Projects. I also teach graduate-level courses at schools like Parsons, usually teaching students how to make art, games, and installations with code. When I'm not coding for money, I'm also involved with LiveCode.NYC, a collective of tech artist who use live programming to create audio-visual performances."]]]]])
+                    [:br]
+                    [:p "I like to make things that have both physical and digital dimensions to them. I have a BS in Industrial Design from The University of the Arts and an MFA in Design and Technology from Parsons. I like to converge these two feilds in the form of interactive installations, fun web experiences, and games. I'm always looking at our relationships to technology and the ways we wield it: how it does things for us, and to us. When I'm not busy making things, I enjoy exploring the city, running tabletop roleplaying campaigns, or trying to developing new skills/hobbies like knitting and the subtle art of house plant care."]
+                    [:br]
+                    [:p "For my day job, I'm currently a Creative Technologist at Local Projects. I also teach graduate-level courses at schools like Parsons, usually teaching students how to make art, games, and installations with code. When I'm not coding for money, I'm also involved with " [:a {:href "http://livecode.nyc/" :target "blank"} "LiveCode.NYC"]", a collective of tech artist who use live programming to create audio-visual performances."]
+                    [:br]
+                    [:p "This website was made using " [:a {:href "http://reagent-project.github.io/" :target "blank"} "Reagent"]", a Clojurescript library that interfaces with React. The source code for this site can be found " [:a {:href "https://github.com/thatcotter/portfolio-cljs" :target "blank"} "here"] "."]]]]])
         ; [:section.hero.is-info.is-bold
             ; [:div.hero-body
             ;     [:h1.title.is-primary "What I Do"]
